@@ -1,2 +1,2 @@
 ## OTP page w/vanillaJS
-full featured OTP page.
+I created basic OTP page. I used vanillaJS , css3 & html5. It's works...
