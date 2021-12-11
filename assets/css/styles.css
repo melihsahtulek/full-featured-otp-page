@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap");
+
+:root {
+  --white: #ffffff;
+  --grey: #e7e7e7;
+  --purple: #5856d6;
+  --black: #1f1f21;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1;
+}
+
+span,
+a,
+p,
+div {
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-family: "Ubuntu", sans-serif;
+  height: 100%;
+  color: var(--black);
+}
+
+body {
+  display: flex;
+  height: 100%;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+main > .card {
+  width: 400px;
+  height: auto;
+  box-shadow: 0 0 5px var(--grey), 0 0 3px var(--grey);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+main > .card .cardHeader {
+  width: 100%;
+  height: 150px;
+  background-image: url("../img/headerBanner.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 90%;
+  background-position: center;
+  background-color: var(--purple);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main > .card .cardHeader > h3 {
+  background-color: rgba(255, 255, 255, 0.9);
+  font-weight: 300;
+  font-size: 27px;
+  padding: 10px 5px;
+  border-radius: 5px;
+  letter-spacing: 5px;
+}
+
+main > .card > .msg {
+  font-weight: 300;
+  font-size: 17px;
+  padding: 10px;
+}
+
+main > .card .formContainer > form {
+  height: auto;
+}
+
+main > .card .formContainer > form > .inputContainer {
+  display: flex;
+  padding: 10px 5px;
+  padding-top: 0;
+}
+
+main > .card .formContainer > form > .inputContainer > input {
+  all: unset;
+  width: 20%;
+  height: 50px;
+  font-size: 25px;
+  font-family: inherit;
+  font-weight: 300;
+  border: 1px solid var(--grey);
+  border-radius: 5px;
+  margin: 0 5px;
+  text-align: center;
+}
+
+main > .card .formContainer > form > .inputContainer > input:focus {
+  border-color: var(--purple);
+}
+
+main > .card .formContainer > form > .inputContainer > input::marker {
+  display: none;
+}
+
+.cardFooter {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid var(--grey);
+}
+
+.cardFooter > a {
+  color: inherit;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.cardFooter > span {
+  color: var(--purple);
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.material-icons.md-18 {
+  font-size: 18px;
+}
+.material-icons.md-24 {
+  font-size: 24px;
+}
+.material-icons.md-36 {
+  font-size: 36px;
+}
+.material-icons.md-48 {
+  font-size: 48px;
+}
+
+@media (max-width: 414px) {
+  main {
+    padding: 0 10px !important;
+  }
+
+  main > .card {
+    width: unset;
+    width: 100% !important;
+  }
+}
